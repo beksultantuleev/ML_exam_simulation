@@ -126,7 +126,6 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'An autoencoder is a multy-layer perceptron which aims at reproducing the input of the perceptron. The perceptrons in the middle layer of the neural network extract those input dimensions which can be used to build a model that minimizes the difference between input data and rebuilt data.':'f'},
 {'The internal parameters (weights) of the models created using supervised learning techniques define the flexibility of the models. If a model underfits, a possible explanation is that the number of parameters of the model is too large with respect to the number of examples of the training set, and so the model cannot properly generalize on unseen data.':'f'},
 {'The logistic function cannot be used as a model to solve regression problems':'f'},
-{'':''},
 
 ]
 
