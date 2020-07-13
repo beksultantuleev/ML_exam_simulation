@@ -24,7 +24,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'The points satisfying the inequality 6x1 + 9x2 > 0 do not form a convex set.':'f'},
 {'"Statistically signicant result" means that one can estimate probabilities of obtaining specic results, and that the probability to obtain the result by chance is less than a threshold value. Therefore the conclusion "statistically signicant or not" depends on the threshold value.':'t'},
 {'For every k>0, in leave-one-out cross-validation, one of the k partitions is left out as validation data and the other partitions are used as training data.':'f'},
-{'The number of data examples used for comparing different ML models greatly aects the level of statistical signicance of the results.':'t'},
+{'The number of data examples used for comparing different ML models greatly affect the level of statistical signicance of the results.':'t'},
 {'The measurements of two phenomena are different in a statistically signicant way if one can demonstrate in a theorem that the two measurements will never be equal.':'f'},
 {'A result is statistically signicant when it is obtained by democratic means, asking for the opinion of the largest possible number of experts.':'f'},
 {'In stratied cross-validation, classes are balanced in both training and validation sets.':'t'},
