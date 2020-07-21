@@ -35,13 +35,12 @@ def runtest():
         "\n   Answer the qns with 't' (true), 'f' (false), or press Enter to skip. You can terminate the attempt by answering 'e' (exit)\n"
     )
     counter = 0
-    qn_number = 1
     start = timeit.default_timer()
 
     for qn, ans in questions:
         answer = None
         while answer not in ["t", "f", "e", ""]:
-            answer = input(f"{qn_number}) {qn} >>> ").lower()
+            answer = input(f"{counter+1}) {qn} >>> ").lower()
             if answer == "true":
                 answer = "t"
             elif answer == "false":
@@ -62,7 +61,6 @@ def runtest():
             wrong += 1
             print("\n\tIncorrect!\n")
         counter += 1
-        qn_number += 1
 
     stop = timeit.default_timer()
     score = (right - wrong - skipped) if mode == "survivor" else (right - wrong)
