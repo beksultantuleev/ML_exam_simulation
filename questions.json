@@ -625,7 +625,7 @@
     ],
     [
         "K-means clustering is not a supervised learning technique",
-        "f"
+        "t"
     ],
     [
         "In bottom-up clustering at each step the most similar sets of points are merged together until a stopping criteria is met and the merging stops",
