@@ -204,8 +204,9 @@ def runtest(questions):
     start = timeit.default_timer()
 
     for dictionary in questions:
+        answer = None
         for qn, ans in dictionary.items():
-            answer = None
+            
             while answer not in ["t", "f", "e", ""]:
                 answer = input(f"{counter+1}) {qn} >>> ").lower()
                 if answer == "true":
@@ -228,9 +229,11 @@ def runtest(questions):
                 wrong += 1
                 print("\n\tIncorrect!\n")
             counter += 1
+        if answer == "e":
+            break
 
-        stop = timeit.default_timer()
-        score = (right - wrong - skipped) if mode == "survivor" else (right - wrong)
+    stop = timeit.default_timer()
+    score = (right - wrong - skipped) if mode == "survivor" else (right - wrong)
     return f"""
 _____________________
 RESULTS
