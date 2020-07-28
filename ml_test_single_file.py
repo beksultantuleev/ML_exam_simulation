@@ -99,7 +99,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'A logistic function is used to transform the output of a linear model in the interval [0,1], so that it an be interpreted as a probability':'t'},
 {'A logistic function determines the threshold according to which the output of a linear model is classified.':'f'},
 {'Logistic regression can be used to solve regression problems':'f'},
-{'In logistic regression, the standard sigmoid function is defined as 1/(1+e^t) with t= w^T*x, where w is a vector of weights and x is a vector of input data':'t'},
+{'In logistic regression, the standard sigmoid function is defined as 1/(1+e^(-t)) with t= w^T*x, where w is a vector of weights and x is a vector of input data':'t'},
 {'Filter methods are not able to identify mutual relationships between different inputs':'t'},
 {'Even if the Pearson correlation coefficient between two data features is zero, it is not possible to state that such features are independent':'t'},
 {'Filter methods consider different subsets of features of data to build a model, and they run training and testing for possible subsets of features in order to decide the best subset to be used':'f'},
@@ -239,8 +239,9 @@ _____________________
 RESULTS
 
 Your score is: {score} point(s).
+\tGrade: '{score*31/counter:.2f}'
 \tRight ones {right}. Wrong ones {wrong}. Skipped ones {skipped}. Overall qns {counter}.
-\tTIME: {(stop - start) / 60:.2f} minutes.
+\tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start)/counter:.2f} sec.
 \tMode: '{mode}'"""
 
 
