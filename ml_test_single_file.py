@@ -2,12 +2,11 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'The impact of random errors can be reduced by using large sample sizes': 't'},
 {'Systematic errors do not happen by pure randomness.': 't'},
 {'The variance of a model measures how the expected output of a machine learning model differs from the true value of the function approximated by the model':'f'},
-{'The objective of supervised learning is to find a model that reduces to zero the error between the model and the function approximated by the model. If a model A has a lower error on the training examples with respect to another model B,A  must be preferred':'f'},
+{'The objective of supervised learning is to find a model that reduces to zero the error between the model and the function approximated by the model. If a model A has a lower error on the training examples with respect to another model B, A must be preferred':'f'},
 {'The expected error between the label y of a data sample and the output of a supervised model f_hat(x) depends on bias or on variance, according to the weights of the model':'f'},
-{'In the K-nearest-neighbours algorithm for classication, the output of a new input vector cannot be obtained as the majority of the outputs of the K-nearest vectors in memory':'f'},
+{'In the K-nearest-neighbours algorithm for classification, the output of a new input vector cannot be obtained as the majority of the outputs of the K-nearest vectors in memory':'f'},
 {'In the K-nearest-neighbours algorithm, a long training phase is executed with the examples so that the generalization error will decrease.':'f'},
-{'When applying the weighted k-nearest-neighbours algorithm for regression, the output of a new input vector is predicted depending on the output of the nearest k vectors in memory, with a weighted average giving more weight to the closest examples.':'t'},
-{'Nearest neighbours algorithms can only be applied to classication problems.':'f'},
+{'Nearest neighbours algorithms can only be applied to classification problems.':'f'},
 {'Precision is the proportion of true positives over the all the predictions predicted as positive by a classier':'t'},
 {'Given a dataset of mushrooms, where edible mushrooms belong to the positive class and deadly mushrooms belong to the negative class, maximizing precision is more important than maximizing recall.':'t'},
 {'Recall is the proportion of true negatives over all the elements that actually belong to the positive class':'f'},
@@ -19,16 +18,15 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'The roots of the equation x1+3x2=0 form a convex set.':'t'},
 {'The intersection of two convex sets is always convex.':'t'},
 {'The points satisfying the inequality 6x1 + 9x2 > 0 do not form a convex set.':'f'},
-{'"Statistically signicant result" means that one can estimate probabilities of obtaining specic results, and that the probability to obtain the result by chance is less than a threshold value. Therefore the conclusion "statistically signicant or not" depends on the threshold value.':'t'},
 {'For every k>0, in leave-one-out cross-validation, one of the k partitions is left out as validation data and the other partitions are used as training data.':'f'},
-{'The number of data examples used for comparing different ML models greatly affect the level of statistical signicance of the results.':'t'},
-{'The measurements of two phenomena are different in a statistically signicant way if one can demonstrate in a theorem that the two measurements will never be equal.':'f'},
-{'A result is statistically signicant when it is obtained by democratic means, asking for the opinion of the largest possible number of experts.':'f'},
-{'In stratied cross-validation, classes are balanced in both training and validation sets.':'t'},
+{'The number of data examples used for comparing different ML models greatly affect the level of statistical significance of the results.':'t'},
+{'The measurements of two phenomena are different in a statistically significant way if one can demonstrate in a theorem that the two measurements will never be equal.':'f'},
+{'A result is statistically significant when it is obtained by democratic means, asking for the opinion of the largest possible number of experts.':'f'},
+{'In stratified cross-validation, classes are balanced in both training and validation sets.':'t'},
 {'In cross-validation, one repeats many train-and-test experiments, by splitting the original set of examples into two sets of different partitions (one for training and one for testing), and then maximizing the obtained result.':'f'},
 {'Stratified cross-validation is useful to create learning models with more hidden layers.':'f'},
 {'Given a dataset of n examples, the weights w* found by least squares methods do not define a model which is valid for all possible inputs.':'t'},
-{'Given a dataset of n tuples (xi,yi) with 1<=i<=n, the signicance Si defines the importance that each xi has on the prediction of the output of some point x':'t'},
+{'Given a dataset of n tuples (xi,yi) with 1<=i<=n, the significance Si defines the importance that each xi has on the prediction of the output of some point x':'t'},
 {'Given a dataset of n tuples (xi,yi) with 1<=i<=n, least squares methods are used to minimize the error sum(yi(w^T*xi-si)^2), where si is the significance of xi.':'f'},
 {'Given a dataset of n tuples (xi,yi) with 1<=i<=n, let x be a point whose output needs to be predicted using Locally-Weighted Regression. The significance si can be defined as si = Exp(-(||xi-x||^2)/(Wk)), where Wk is some constant which controls the sensitivity of the model to points distant from x.':'t'},
 {'Consider a dataset of n tuples in 2-dimensions (x1, x2), and let S be the covariance matrix of such dataset. Transform the dataset by multiplying x1 by a scalar alpha and obtain a dataset in 2-dimensions (alpha*x1, x2), defining S1 as the covariance matrix of the transformed dataset. Since the covariance matrix only measures how the coordinates of a set of points vary together, S=S1':'f'},
@@ -59,7 +57,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'Clustering is a multi-objective optimization problem.':'t'},
 {'Let x and y be two vectors of length n. ||x-y|| defines the Manhattan distance between x and y':'f'},
 {'Clustering is a supervised learning technique':'f'},
-{'In k-means hard-clustering, the objective is to partition a set of entities into  disjoint subsets. Such objective is reached by minimizing the dissimilarities between the points and the prototype of each cluster, and maximizing the distances between the borders of different clusters':'t'},
+{'In k-means hard-clustering, the objective is to partition a set of entities into disjoint subsets. Such objective is reached by minimizing the dissimilarities between the points and the prototype of each cluster, and maximizing the distances between the borders of different clusters':'t'},
 {'Consider a dataset with n points in d dimensions. As a result, in least squares methods, we have to find the solution of a set of n equations in d variables':'t'},
 {'If the number of different points is larger than the number of dimensions, the solution of the linear system can be found by computing the inverse of the matrix':'f'},
 {'In gradient descent, if the step is less than 0.000000001 the function value will always decrease':'f'},
@@ -72,7 +70,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'The internal parameters (weights) of models created using supervised learning techniques define the flexibility of the models. If a model overfits, a possible explanation is that the number of parameters of the model is too large given the observed data and so the model cannot properly generalize on unseen data':'t'},
 {'Available data is composed by vectors of features x_vector associated to an output y, and such data is used to build a function which models the relationship between x_vector and y':'t'},
 {'PCA is a supervised learning technique.':'f'},
-{'Models for solving classication and regression problems are built by optimizing an objective function, which is assumed to be sufficiently smooth so that the generalization of a model built on training examples is possible':'t'},
+{'Models for solving classification and regression problems are built by optimizing an objective function, which is assumed to be sufficiently smooth so that the generalization of a model built on training examples is possible':'t'},
 {'In linear regression, if the number of parameters of the model is too large, learning the examples with zero errors becomes trivial, but the model will have difficulties when generalizing results on unseen data':'t'},
 {'An autoencoder is a multi-layer perceptron which aims at reproducing the input of the perceptron, using an intermediate encoding with less variables than the input.':'t'},
 {'The following is a plausible squashing function to be applied to the result z of a scalar product to ensure a biologically-plausible output: squash(z) = 1/(1+e^(-z))':'t'},
@@ -85,7 +83,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'Goodness functions take measurements or decision variables as input and quantify an objective which needs to be optimized':'t'},
 {'Inputs can be only numerical, qualitative measurements need to be transformed into numbers':'t'},
 {'Machine learning techniques can build effective models only if abundant data is available for training and for testing':'t'},
-{'Standard mathematical optimization requires the existence of goodness functions to be optimized, and the defenition of these functions usually requires an expensive effort in the real world. In many cases, this can be the most relevant effort in a "data science" project':'t'},
+{'Standard mathematical optimization requires the existence of goodness functions to be optimized, and the definition of these functions usually requires an expensive effort in the real world. In many cases, this can be the most relevant effort in a "data science" project':'t'},
 {'The objective of regression is to model the dependency of a real value on a set of input values.':'t'},
 {'The objective of linear regression is to always guarantee zero error on the training examples':'f'},
 {'If the number of input variables is 33, and one starts training from 99 examples, the parameters of the linear model obtaining zero error on the examples can always be determined':'f'},
@@ -99,7 +97,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'A logistic function is used to transform the output of a linear model in the interval [0,1], so that it an be interpreted as a probability':'t'},
 {'A logistic function determines the threshold according to which the output of a linear model is classified.':'f'},
 {'Logistic regression can be used to solve regression problems':'f'},
-{'In logistic regression, the standard sigmoid function is defined as 1/(1+e^(-t)) with t= w^T*x, where w is a vector of weights and x is a vector of input data':'t'},
+{'In logistic regression, the standard sigmoid function is defined as 1/(1+e^t) with t= w^T*x, where w is a vector of weights and x is a vector of input data':'f'},
 {'Filter methods are not able to identify mutual relationships between different inputs':'t'},
 {'Even if the Pearson correlation coefficient between two data features is zero, it is not possible to state that such features are independent':'t'},
 {'Filter methods consider different subsets of features of data to build a model, and they run training and testing for possible subsets of features in order to decide the best subset to be used':'f'},
@@ -110,21 +108,21 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'If the Pearson correlation coefficient between two data features is zero, the Mutual Information between such features is also zero':'f'},
 {'A possible normalization of the data consists of rescaling all input dimensions that they range is in [0,1].':'t'},
 {'The linear correlation coefficient between xi and yi does not change if x values are centered by subtracting their mean value mu in the following manner: (xi - mu)':'t'},
-{'In a classication problem of newspaper articles, statistical independence between class and input term means that Pr(class = c and term = t) = Pr(class = c) Pr(term = t)':'t'},
+{'In a classification problem of newspaper articles, statistical independence between class and input term means that Pr(class = c and term = t) = Pr(class = c) Pr(term = t)':'t'},
 {'The use of the Chi-square test to deny statistical independence between two input dimensions means that, the larger the X^2 value, the lower is the probability that the input dimensions are truly independent':'t'},
 {'Consider a dataset with n points in d dimensions. As a result, in least squares methods, we have to find the solution of a set of d equations in n variables':'f'},
-{'Consider a dataset composed by n examples (xi,yi) with 1<=i<=n. The linear correlation coefficient between xi and yi may change if x values are squred.':'t'},
+{'Consider a dataset composed by n examples (xi,yi) with 1<=i<=n. The linear correlation coefficient between xi and yi may change if x values are squared.':'t'},
 {'The quantization error measure the error obtained by substituting the entities of each cluster with respective prototype. However the lower quantization error does not always imply a better clustering':'t'},
 {'In k-means soft clustering, the online update should be preferred with respect to the batch update when the number of entities is very large. ':'t'},
-{'An autoencoder is a multy-layer perceptron which aims at reproducing the input of the perceptron. The perceptrons in the middle layer of the neural network extract those input dimensions which can be used to build a model that minimizes the difference between input data and rebuilt data.':'f'},
+{'An autoencoder is a multi-layer perceptron which aims at reproducing the input of the perceptron. The perceptrons in the middle layer of the neural network extract those input dimensions which can be used to build a model that minimizes the difference between input data and rebuilt data.':'f'},
 {'The internal parameters (weights) of the models created using supervised learning techniques define the flexibility of the models. If a model underfits, a possible explanation is that the number of parameters of the model is too large with respect to the number of examples of the training set, and so the model cannot properly generalize on unseen data.':'f'},
 {'The logistic function cannot be used as a model to solve regression problems':'f'},
 #june 2020
-{'The internal parameters (weights) of models created usign supervised learning techniques define the flexibility of the model':'t'},
-{'The internal parameters (weights) of models created usign supervised learning techniques define the flexibility of the models. If a model underfits a possible explanation is that the complexity of the model is not sufficient to properly model the relationship between input features and ouput label. Therefore, the model cannot properly generalize on unseen data.':'t'},
+{'The internal parameters (weights) of models created using supervised learning techniques define the flexibility of the model':'t'},
+{'The internal parameters (weights) of models created using supervised learning techniques define the flexibility of the models. If a model underfits a possible explanation is that the complexity of the model is not sufficient to properly model the relationship between input features and ouput label. Therefore, the model cannot properly generalize on unseen data.':'t'},
 {'The Pearson correlation coefficient measures arbitrarily nonlinearity between numeric data features. It is defined as the covariance of two inputs features divided by the product of their standard deviation; as a consequence, if the covariance is negative then also the correlation coefficient is going to be negative':'f'},
 {'The cosine similarity is influenced by the units of measure used to express the input features of data, so input features should be normalised before applying clustering techniques which use dissimilarities based on the cosine similarity':'f'},
-{'The impact of random errors cannot be redued by using large sample sizes':'f'},
+{'The impact of random errors cannot be reduced by using large sample sizes':'f'},
 {'When applying the weighted KNN algorithm for regression, the output of a new input vector is predicted depending on the output of the nearest K vectors in memory, with a weighted average giving more weights to the closest examples':'t'},
 {'In a binary classification problem where the proportion of examples of each class in the dataset is the same, kfold cv is expected to provide a more balanced version of the results with respect to stratified kfold cv':'f'},
 {'The following function of two input variables x_1 and x_2: f(x_1,x_2 )=BinaryXOR(x_1,x_2 ) can be realized using multilayer perceptron with a single layer':'f'},
@@ -153,7 +151,7 @@ questions = [{'Errors related to bias can be reduced by using large sample sizes
 {'In Locally-Weighted Regression, given a dataset of n examples, the weights w* found by least squares methods define a model which is not valid for all possible inputs because a specific model is built for each query point q':'t'},
 {'The following is a plausible squashing function to be applied to the result z of a scalar product to ensure biologically plausible output squash(z)=1/(1-e^(-x) )':'f'},
 {'Consider a 2dim space, where each point x=(x_1,x_2) and x∈R^2. The union of points satisfying x_1<0 and x_2<0 form a convex set':'f'},
-{'Statistically significant result means that one can estimate probabilities of obtaining specific results, and that the probability to obtain the result by chance is less than a threshold value. Therefore, the conclusion to statistically significant or not depends on the threshold values':'t'},
+{'Statistically significant result means that one can estimate probabilities of obtaining specific results, and that the probability to obtain the result by chance is less than a threshold value. Therefore, the conclusion to statistically significant or not depends on the threshold value':'t'},
 {'The scalar product y^T∙x between is a valid model for a neuron, where x and y are two different input vectors':'f'},
 {'Given a dataset of n examples (x_i,y_i ) with 1≤i≤n in d dimensions. In least square methods, if n>d, the solution of the linear system can be found by computing the pseudo-inverse of the matrix':'t'},
 {'Models with too many parameters with respect to the training data tend to fail because of a large variance, since they define models which might easily overfit the data':'t'},
@@ -178,17 +176,25 @@ def runtest(questions):
     right = 0
     wrong = 0
     skipped = 0
-    mode = input(
-        "Please select mode: 'exam' (exam simulation, u have 55 qns in 45 min), 'hard' (33 qns), 'survivor' (110+ qns) >>> "
-    ).lower()
+    mode = (
+        input(
+            "Please select mode: 'exam' (exam simulation, u have 55 qns in 45 min), 'hard' (33 qns), 'survivor' (110+ qns) >>> "
+        )
+        .lower()
+        .strip()
+    )
     if mode == "exam":
         questions = questions[:55]
     elif mode == "hard":
         questions = questions[:33]
     elif mode == "survivor":
-        resure = input(
-            "\n\tWARNING!!!\n \nYou are about to start the test in survivor mode! \nIn this mode every skipped qn is -1 point!\n \n\tAre  you sure?? \n \ntype 'YES' (yes, bring it on!!) or 'NO' (no, I want my Mommy!)>>> "
-        ).lower()
+        resure = (
+            input(
+                "\n\tWARNING!!!\n \nYou are about to start the test in survivor mode! \nIn this mode every skipped qn is -1 point!\n \n\tAre  you sure?? \n \ntype 'YES' (yes, bring it on!!) or 'NO' (no, I want my Mommy!)>>> "
+            )
+            .lower()
+            .strip()
+        )
         if resure == "yes":
             pass
         else:
@@ -208,7 +214,7 @@ def runtest(questions):
         for qn, ans in dictionary.items():
             
             while answer not in ["t", "f", "e", ""]:
-                answer = input(f"{counter+1}) {qn} >>> ").lower()
+                answer = input(f"{counter+1}) {qn} >>> ").lower().strip()
                 if answer == "true":
                     answer = "t"
                 elif answer == "false":
@@ -224,7 +230,7 @@ def runtest(questions):
                 print("\n\tCorrect!\n")
             elif answer == "":
                 skipped += 1
-                print("\n\tSkipped!\n")
+                print(f"\n\tSkipped! The correct answer is {ans}\n")
             else:
                 wrong += 1
                 print("\n\tIncorrect!\n")
@@ -239,9 +245,9 @@ _____________________
 RESULTS
 
 Your score is: {score} point(s).
-\tGrade: '{score*31/counter:.2f}'
+\tGrade: '{score * 31 / counter:.2f}'
 \tRight ones {right}. Wrong ones {wrong}. Skipped ones {skipped}. Overall qns {counter}.
-\tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start)/counter:.2f} sec.
+\tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start) / counter:.2f} sec.
 \tMode: '{mode}'"""
 
 
