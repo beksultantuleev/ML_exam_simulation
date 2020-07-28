@@ -245,9 +245,9 @@ _____________________
 RESULTS
 
 Your score is: {score} point(s).
-\tGrade: '{score*31/counter:.2f}'
+\tGrade: '{score * 31 / counter:.2f}'
 \tRight ones {right}. Wrong ones {wrong}. Skipped ones {skipped}. Overall qns {counter}.
-\tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start)/counter:.2f} sec.
+\tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start) / counter:.2f} sec.
 \tMode: '{mode}'"""
 
 
