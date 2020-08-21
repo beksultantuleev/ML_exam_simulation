@@ -252,4 +252,4 @@ Your score is: {score} point(s).
 \tMode: '{mode}'"""
 
 
-print(runtest())
+print(runtest(questions))
