@@ -78,7 +78,7 @@ _____________________
 RESULTS
 
 Your score is: {score} point(s).
-\tGrade: '{(right * counter / 30) - (wrong * counter / 30):.2f}/30'
+\tGrade: '{((right / counter) * 33) - ((wrong / counter) * 33):.2f}/30'
 \tRight ones {right}. Wrong ones {wrong}. Skipped ones {skipped}. Overall qns {counter}.
 \tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start) / counter:.2f} sec.
 \tMode: '{mode}'"""
