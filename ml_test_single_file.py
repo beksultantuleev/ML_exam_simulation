@@ -214,7 +214,7 @@ def runtest(questions):
         for qn, ans in dictionary.items():
             
             while answer not in ["t", "f", "e", ""]:
-                answer = input(f"{counter+1}) {qn} >>> ").lower().strip()
+                answer = input(f"{counter + 1}) {qn} >>> ").lower().strip()
                 if answer == "true":
                     answer = "t"
                 elif answer == "false":
@@ -240,15 +240,16 @@ def runtest(questions):
 
     stop = timeit.default_timer()
     score = (right - wrong - skipped) if mode == "survivor" else (right - wrong)
+    # the formula has been given by Manuel
     return f"""
 _____________________
 RESULTS
 
 Your score is: {score} point(s).
-\tGrade: '{score * 31 / counter:.2f}'
+\tGrade: '{(right * counter / 30) - (wrong * counter / 30):.2f}/30'
 \tRight ones {right}. Wrong ones {wrong}. Skipped ones {skipped}. Overall qns {counter}.
 \tTIME: {(stop - start) / 60:.2f} minutes. Avrg time per qn: {(stop - start) / counter:.2f} sec.
 \tMode: '{mode}'"""
 
 
-print(runtest(questions))
+print(runtest())
